@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="CWeb 1010">
+	<meta name="keywords" content="grids">
+	<meta name="author" content="Mubarek Al-Mutawa">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>grid-item</title>
+	
+	<style>
+	
+		body {background-color: #70998c;}
+	
+		.grid-container {
+			display: grid;
+			height: 400px;
+			gap: 20px;
+			background-color: #F1C232;
+			margin: 30px;
+			padding: 20px;
+		}
+		
+		.grid-item {
+			background-color: #3261f1;
+			text-align: center;
+			padding: 20px;
+			font-size: 30px;
+			box-shadow: 10px 8px #c09b28
+		}
+	
+		.item1 {
+			grid-column: 1 / span 2;
+			grid-row: 1;
+			border: solid 10px #1e3a90;
+			border-style: inset;
+		}
+	
+		.item2 {
+			grid-column: 3;
+			grid-row: 1 / span 2;
+			border: solid 10px #5a80f3;
+			border-style: inset;
+		}
+		
+		@media only screen and (max-width: 768px) {
+			body {
+				background-color: red;
+			}
+	
+			.item5 {background-color: #00e8db; }
+			h1, p {color: white;}
+			
+			}
+		
+	</style>
+</head>
+
+<body>
+	<h1>Five Items grid layout</h1>
+	
+	<div class="grid-container">
+		<div class="grid-item item1">1</div>
+		<div class="grid-item item2">2</div>
+		<div class="grid-item item3">3</div>
+		<div class="grid-item item4">4</div>
+		<div class="grid-item item5">5</div>	
+	</div>
+</body>
+</html>
